@@ -10,10 +10,16 @@ namespace proyecto_definitivo
     
     {
         public static void Main()
+
+
         {
+            double num1 = 0.0;
+            double num2 = 0.0;
+            double num3 = 0.0;
+
             do
             {
-                try
+               
                 {
                     double menu_1;
                     Clase_menu.menu();
@@ -26,35 +32,35 @@ namespace proyecto_definitivo
                             switch (menu_2)
                             {
                                 case 1:
-                                    Class_Operadores.Op_1(1, 2);
+                                    Class_Operadores.Op_1( num1, num2);
                                     break;
-
+                                        
                                 case 2:
-                                    Class_Operadores.Op_2(1, 2);
+                                    Class_Operadores.Op_2(num1,num2);
                                     break;
 
                                 case 3:
-                                    Class_Operadores.Op_3(1);
+                                    Class_Operadores.Op_3(num1);
                                     break;
 
                                 case 4:
-                                    Class_Operadores.Op_4(1);
+                                    Class_Operadores.Op_4(num1);
                                     break;
 
                                 case 5:
-                                    Class_Operadores.Op_5(1);
+                                    Class_Operadores.Op_5(num1);
                                     break;
 
                                 case 6:
-                                    Class_Operadores.Op_6(1, 2);
+                                    Class_Operadores.Op_6(num1,num2);
                                     break;
 
                                 case 7:
-                                    Class_Operadores.Op_7(1);
+                                    Class_Operadores.Op_7(num1);
                                     break;
 
                                 case 8:
-                                    Class_Operadores.Op_8(1, 2, 3);
+                                    Class_Operadores.Op_8(num1,num2,num3);
                                     break;
 
                                 case 9:
@@ -69,31 +75,31 @@ namespace proyecto_definitivo
                             switch (menu_3)
                             {
                                 case 1:
-                                    Class_Condicionales.Op_1(1);
+                                    Class_Condicionales.Op_1(num1);
                                     break;
 
                                 case 2:
-                                    Class_Condicionales.Op_2(1, 2);
+                                    Class_Condicionales.Op_2(num1,num2);
                                     break;
 
                                 case 3:
-                                    Class_Condicionales.Op_3(1, 2, 3);
+                                    Class_Condicionales.Op_3(num1 ,num2,num3);
                                     break;
 
                                 case 4:
-                                    Class_Condicionales.Op_4(1, 2);
+                                    Class_Condicionales.Op_4(num1,num2);
                                     break;
 
                                 case 5:
-                                    Class_Condicionales.Op_5(1, 2);
+                                    Class_Condicionales.Op_5(num1,num2);
                                     break;
 
                                 case 6:
-                                    Class_Condicionales.Op_6(1, 2);
+                                    Class_Condicionales.Op_6(num1,num2);
                                     break;
 
                                 case 7:
-                                    Class_Condicionales.Op_7(1);
+                                    Class_Condicionales.Op_7(num1);
                                     break;
 
                                 case 8:
@@ -109,31 +115,31 @@ namespace proyecto_definitivo
                             switch (menu_4)
                             {
                                 case 1:
-                                    Class_Ciclos.Op_1(1);
+                                    Class_Ciclos.Op_1(num1);
                                     break;
 
                                 case 2:
-                                    Class_Ciclos.Op_2(1);
+                                    Class_Ciclos.Op_2(num1);
                                     break;
 
                                 case 3:
-                                    Class_Ciclos.Op_3(1);
+                                    Class_Ciclos.Op_3(num1);
                                     break;
 
                                 case 4:
-                                    Class_Ciclos.Op_4(1);
+                                    Class_Ciclos.Op_4(num1);
                                     break;
 
                                 case 5:
-                                    Class_Ciclos.Op_5(1, 2, 3);
+                                    Class_Ciclos.Op_5(num1,num2,num3);
                                     break;
 
                                 case 6:
-                                    Class_Ciclos.Op_6(1, 2, 3);
+                                    Class_Ciclos.Op_6(num1,num2,num3);
                                     break;
 
                                 case 7:
-                                    Class_Ciclos.Op_7(1, 2);
+                                    Class_Ciclos.Op_7(num1,num3);
                                     break;
 
                                 case 8:
@@ -148,15 +154,7 @@ namespace proyecto_definitivo
                         default:
                             break;
                     }
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("El termino ingresado no es valido");
-                }
-                
-                Console.WriteLine("Presione ENTER para volver");
-                Console.ReadKey();
-                Console.Clear();
+                }              
             } while (true);
 
         }
